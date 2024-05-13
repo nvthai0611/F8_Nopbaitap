@@ -1,0 +1,12 @@
+.head img{
+    width: 30px;
+    height: 30px;
+}
+
+.body{
+    margin-bottom: 20px;
+}
+
+.footer button{
+    text-transform: uppercase;
+}

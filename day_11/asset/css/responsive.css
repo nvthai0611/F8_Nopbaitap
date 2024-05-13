@@ -1,0 +1,28 @@
+@media screen and (max-width: 1399.98px ) {
+    /* .grocecy-wrap__img{
+        flex: 1;
+        width: 1000px;
+    }
+    .grocecy-wrap__img img{
+        width: 100%;
+    } */
+    .grocecy-wrap .row{
+        display: initial;
+    } 
+
+    .grocecy-wrap__info{
+        width: 100%;
+        display: block;
+    }
+
+    .grocecy-info__test{
+        display: block;
+        width: 100%;
+    }
+    .grocecy-wrap__img{
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    
+}

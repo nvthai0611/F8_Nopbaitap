@@ -1,0 +1,346 @@
+
+/* Start css  */
+.landing-login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/landing-background.jpg") no-repeat 0;
+    background-size: cover;
+}
+
+.landing-sup__img{
+    position: absolute;
+    width: 64%;
+    height: 140%;
+    background: url("../img/dot-texture.png") repeat 0 0 #fff;
+    top: -20%;
+    right: -32%;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+
+/* Start css login-info left */
+.landing-login__info{
+    height: 100%;
+    text-align: center;
+    color: var(--color);
+}
+.landing-info__logo{
+    margin-top: -10px;
+}
+
+
+.landing-login__info p:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.landing-login__info p:last-of-type{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.333rem;
+    margin: auto;
+    margin-bottom: 90px;
+    width: 385px;
+}
+
+.landing-login__info h1{
+    font-size: 6.5rem;
+    font-family: var(--font-title);
+    font-weight: 900;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.landing-login .info-btn{
+    font-size: 0;
+}
+.info-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-click{
+    display: inline-block;
+    background-color:var(--color);
+    color: #333;
+    font-size: initial;
+    width: 180px;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-click.btn-click__left{
+    /* background-color: ; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.btn-click.btn-click__right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: transparent;
+    color: var(--color);
+}
+
+
+/* Start Login form */
+.landing-form__login{
+    /* position: relative; */
+    margin-left: 50px;
+}
+.login-form__register,
+.login-form__info{
+    position: relative;
+    width: 484px;
+    background-color: var(--color);
+    box-shadow: 0 0 60px 0 rgba(94, 92, 154, .12);
+    z-index: 2;
+    border-radius: 12px;
+    color: var(--color-form);
+    padding: 64px;
+    transition: all 0.5s linear;
+    z-index: 2;
+}
+
+.login-form__register{
+    position: absolute;
+    top: 10%;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.5s linear;
+    z-index: 1;
+}
+
+
+.login-form__info h2{
+    font-size: 1.625rem;
+    margin-bottom: 60px;
+}
+
+.login-form__img{
+    position: absolute;
+    top: calc(0px - 70px);
+    left: -10%;
+}
+
+.form{
+    width: 100%;
+}
+
+.form-input{
+    position: relative;
+}
+
+.form-input input{
+    position: relative;
+    border: 1px solid var(--border-input);
+    width: 100%;
+    height: 54px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 16px;
+    margin-bottom: 15px;
+}
+
+.form-input input:hover{
+    border-color: #00c7d9;
+}
+
+.form-input label{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    background-color: #fff;
+    z-index: 2;
+    transition: top 0.2s ease-in, left 0.2s ease-in, font-size 0.2s ease-in;
+}
+
+
+/* Animation form input */
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+
+.form-option a,
+.form-input > label{
+    font-weight: 700;
+    font-size: var(--font-size-input * 2);
+    color: var(--color-label-a);
+}
+
+.form-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.form-option label span{
+    position: relative;
+    color: var(--color-form);
+    font-weight: 700;
+    padding-left: 30px;
+    font-size: var(--font-size-input);
+    cursor: pointer;
+}
+.form-option span::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-input);
+    border-radius: 5px;
+}
+
+.form-option span::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 10px;
+    height: 5px;
+    border-top: 2px solid transparent;
+    border-left: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    border-right: 2px solid transparent;
+    transform: rotate(-45deg);
+}
+
+input:checked + span::before {
+    background: #00c7d9;
+}
+
+
+.form-option a{
+    text-decoration: none;
+    font-size: var(--font-size-input);
+}
+
+.form-option a:hover{
+    color: #00c7d9;
+}
+
+.login-btn{
+    width: 100%;
+    background-color: #615dfa;
+    color: var(--color);
+    height: 54px;
+    border-radius: 12px;
+    box-shadow: 4px 7px 12px 0 rgba(97,93,250,.2);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.social-option{
+    position: relative;
+    color: var(--color-form);
+    font-weight: 600;
+    font-size: var(--font-size-input);
+    margin-bottom: 30px;
+}
+.social-option::before,
+.social-option::after{
+    content: "";
+    top: 50%;
+    position: absolute;
+    width: 70px;
+    height: 0.5px;
+    transform: translateY(50%);
+    background: rgb(206, 206, 206);
+}
+
+.social-option::after{
+    left: 0;
+}
+.social-option::before{
+    right: 0;
+}
+
+
+
+.social-app {
+    display: flex;
+    font-size: 2rem;
+    margin: 0 10px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+}
+
+.social-app a{
+    padding: 0 15px;
+    transition: transform 0.2s linear;
+}
+
+.social-app a:first-child{
+    color: blue;
+}
+
+.social-app a:nth-child(2){
+    color: #1abcff;
+}
+
+.social-app a:nth-child(3){
+    color: #7b5dfa;
+}
+
+.social-app a:last-child{
+    color: red;
+}
+
+
+.social-app a:hover{
+    transform: translateY(-6px);
+}
+
+
+/* Animation login - register */
+
+
+
+.login:checked ~ .container > .row > .col-6 > .landing-login__info > .info-btn > .div-btn__click > .btn-click__left{
+    background-color: var(--color);
+    color: #333;
+}
+.login:not(.login:checked) ~ .container > .row > .col-6 > .landing-login__info > .info-btn > .div-btn__click > .btn-click__right{
+    background-color: var(--color);
+    color: #333;
+}
+
+.login:not(.login:checked) ~ .container > .row > .col-6 > .landing-login__info > .info-btn > .div-btn__click > .btn-click__left{
+    background-color: transparent;
+    color: var(--color);
+}
+
+.login:not(.login:checked) ~ .container >.row > .col-6 > .landing-form__login > .login-form__info{
+    transform: translateX(200px);
+    opacity: 0;
+    z-index: 2;
+}
+
+.login:not(.login:checked) ~ .container >.row > .col-6 > .landing-form__login > .login-form__register{
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+
+
+
+

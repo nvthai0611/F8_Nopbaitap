@@ -1,0 +1,30 @@
+
+:root{
+    --color: #fff;
+    --color-label-a: #adafca;
+    --color-form: #3e3f5e;
+    --font-title: "Titillium Web" , sans-serif;
+    --border-input: #dedeea;
+    --font-size-input: 0.875rem;
+    /* Grid */
+    --container-width: 1200px;
+    --max-column: 12;
+    --column-space: 20px;
+    --spacer: 1rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+}
+
+
+html{
+    font-size: 16px;
+    font-family: "Rajdhani", sans-serif;
+}
+
+

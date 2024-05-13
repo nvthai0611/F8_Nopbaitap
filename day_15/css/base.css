@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+.container {
+  max-width: auto;
+  margin-inline: auto;
+  padding: 20px 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -10px;
+}
+
+.row.g-0 {
+  --column-space: calc($spacer * 0);
+  --column-bottom: calc($spacer * 0);
+}
+.row.g-1 {
+  --column-space: calc($spacer * 0.25);
+  --column-bottom: calc($spacer * 0.25);
+}
+.row.g-2 {
+  --column-space: calc($spacer * 0.5);
+  --column-bottom: calc($spacer * 0.5);
+}
+.row.g-3 {
+  --column-space: calc($spacer * 1);
+  --column-bottom: calc($spacer * 1);
+}
+.row.g-4 {
+  --column-space: calc($spacer * 1.5);
+  --column-bottom: calc($spacer * 1.5);
+}
+.row.g-5 {
+  --column-space: calc($spacer * 3);
+  --column-bottom: calc($spacer * 3);
+}
+
+[class^=col-] {
+  flex-basis: calc(8.3333333333% * var(--column-size));
+  max-width: calc(8.3333333333% * var(--column-size));
+  padding-inline: calc(var(--column-space) / 2);
+
+}
+
+.col-1 {
+  flex-basis: 8.3333333333%;
+  max-width: 8.3333333333%;
+  padding-inline: 10px;
+
+}
+
+.col-2 {
+  flex-basis: 16.6666666667%;
+  max-width: 16.6666666667%;
+  padding-inline: 10px;
+
+}
+
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+  padding-inline: 10px;
+
+}
+
+.col-4 {
+  flex-basis: 33.3333333333%;
+  max-width: 33.3333333333%;
+  padding-inline: 10px;
+  padding-bottom: 4rem;
+}
+
+.col-5 {
+  flex-basis: 41.6666666667%;
+  max-width: 41.6666666667%;
+  padding-inline: 10px;
+  padding-bottom: 5rem;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding-inline: 10px;
+}
+
+.col-7 {
+  flex-basis: 58.3333333333%;
+  max-width: 58.3333333333%;
+  padding-inline: 10px;
+}
+
+.col-8 {
+  flex-basis: 66.6666666667%;
+  max-width: 66.6666666667%;
+  padding-inline: 10px;
+
+}
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+  padding-inline: 10px;
+
+}
+
+.col-10 {
+  flex-basis: 83.3333333333%;
+  max-width: 83.3333333333%;
+  padding-inline: 10px;
+
+}
+
+.col-11 {
+  flex-basis: 91.6666666667%;
+  max-width: 91.6666666667%;
+  padding-inline: 10px;
+
+}
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-inline: 10px;
+
+}
+
+/*# sourceMappingURL=base.css.map */

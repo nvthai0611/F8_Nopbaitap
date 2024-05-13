@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.form_test img{
+    width: 25px;
+    height: 25px;
+}
+.form_test{
+    line-height: 40px;
+}

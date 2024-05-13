@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <section class="landing-login">
+
+      <!-- <input class="left" id="login"  type="checkbox" /> -->
+      <input class="login" id="btn-login" hidden type="checkbox" checked />
+      <!-- End input animation -->
+
+      <div class="landing-sup__img"></div>
+      <!-- End landing-sub-img -->
+
+      <!-- Start: Info form -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Start Landing-info -->
+            <div class="landing-login__info">
+              <div class="landing-info__logo">
+                <img src="./img/icons8-viking-64.png" alt="" />
+              </div>
+              <p>WELCOME TO</p>
+              <h1>VIKINGER</h1>
+              <p>
+                The next generation social network & community! Connect with
+                your friends and play with our quests and badges gamification
+                system!
+              </p>
+ 
+              <div class="info-btn">
+                <div class="div-btn__click"> 
+                  <label for="btn-login" class="btn-click btn-click__left">
+                        <span>Login</span>
+                  </label>
+                </div>
+                <div class="div-btn__click">
+                  <label for="btn-login" class="btn-click btn-click__right">
+                    <span>Register</span>
+                  </label>
+                </div>
+              </div>
+              <!-- end info-btn -->
+            </div>
+            <!-- End  Landing info -->
+          </div>
+          <!-- End col-6  -->
+
+          <div class="col-12">
+            <div class="landing-form__login">
+                <div class="login-form__info">
+                    <div class="login-form__img">
+                        <img src="./img/rocket.webp" alt="">
+                    </div>
+                    <h2>Account Login</h2>
+                    <form class=".form" action="">
+                        <div class="form-input">
+                            <input id="user" type="text" name="username" class="form__input" autocomplete="off" placeholder=" ">
+                            <label class="form__label" for="user">Username or Email</label>
+                        </div>
+                        <div class="form-input">
+                            <input id="pass" type="password" name="pass" class="form__input" autocomplete="off" placeholder=" ">
+                            <label class="form__label" for="pass" >Password</label>
+                        </div>
+                        <div class="form-option">
+                            <label>
+                                <input hidden type="checkbox" name="checked">
+                                <span>Remamber Me</span>
+                            </label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button class="login-btn">Login to your Account!</button>
+                        <p class="social-option">Login with your Social Account</p>
+                        <div class="social-app">
+                          <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-twitch"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-form__register">
+                  <div class="login-form__img">
+                      <img src="./img/rocket.webp" alt="">
+                  </div>
+                  <h2>Account Login</h2>
+                  <form class=".form" action="">
+                      <div class="form-input">
+                          <input id="user" type="text" name="username" class="form__input" autocomplete="off" placeholder=" ">
+                          <label class="form__label" for="user">Username or Email</label>
+                      </div>
+                      <div class="form-input">
+                          <input id="pass" type="password" name="pass" class="form__input" autocomplete="off" placeholder=" ">
+                          <label class="form__label" for="pass" >Password</label>
+                      </div>
+                      <div class="form-option">
+                          <label>
+                              <input hidden type="checkbox" name="checked">
+                              <span>Remamber Me</span>
+                          </label>
+                          <a href="#">Forgot Password?</a>
+                      </div>
+                      <button class="login-btn">Login to your Account!</button>
+                      <p class="social-option">Login with your Social Account</p>
+                      <div class="social-app">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href=""><i class="fa-brands fa-twitch"></i></a>
+                          <a href=""><i class="fa-brands fa-youtube"></i></a>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <!-- End col-6 -->
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container -->
+    </section>
+  </body>
+</html>

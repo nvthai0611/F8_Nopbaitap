@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: rgba(98, 100, 104, 0.151);
+    width: 600px;
+}
+
+.header,
+.body__form,
+.form__info{
+    width: 100%;
+}
+.header{
+    margin-left: 20px;   
+}
+.header .header__title{
+    margin-bottom: 15px;
+}
+.header .header__info{
+    width: 70%;
+}
+
+.body__form{
+    padding: 10px 0;
+}
+.form__info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.form__info th {
+   text-align: left;
+}
+
+.form__info th, .form__info td {
+    padding: 5px 20px; /* hoặc margin: 8px; */
+    text-align: left;
+}
+
+.form__info input{
+    width: 98%;
+    border: solid 1px rgb(180, 175, 175);
+    height: 36px;
+}
+
+.form__info select {
+    width: 98%;
+    height: 36px;
+    border: 1px solid rgb(180, 175, 175);
+}
+
+.form__info button{
+    background-color: rgb(12, 142, 175);
+    color: white;
+    height: 36px;
+    padding: 10px 30px;
+}
+

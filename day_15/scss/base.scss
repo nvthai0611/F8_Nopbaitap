@@ -1,0 +1,57 @@
+$container-width: auto;
+$max-column: 12;
+$column-space: 20px;
+$spacer: 1rem;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+.container {
+    max-width: $container-width;
+    margin-inline: auto;
+    padding: 20px 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: calc(0px - $column-space / 2);
+}
+
+@mixin gutter($multiplier) {
+    --column-space: calc($spacer * #{$multiplier});
+    --column-bottom: calc($spacer * #{$multiplier});
+}
+
+.row {
+    &.g-0 { @include gutter(0); }
+    &.g-1 { @include gutter(0.25); }
+    &.g-2 { @include gutter(0.5); }
+    &.g-3 { @include gutter(1); }
+    &.g-4 { @include gutter(1.5); }
+    &.g-5 { @include gutter(3); }
+}
+
+@mixin col($size) {
+    $column-bottom: calc($spacer * $size);
+    flex-basis: calc(100% / $max-column * $size);
+    max-width: calc(100% / $max-column * $size);
+    padding-inline: calc($column-space / 2);
+    padding-bottom: $column-bottom; 
+}
+[class^="col-"] {
+    flex-basis: calc(100% / $max-column * var(--column-size));
+    max-width: calc(100% / $max-column * var(--column-size));
+    padding-inline: calc(var(--column-space) / 2);
+    padding-bottom: var(--column-space); 
+}
+
+
+@for $i from 1 through $max-column {
+    .col-#{$i} { @include col($i); }
+}
