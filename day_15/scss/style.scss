@@ -61,8 +61,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-right: 20px;
             li{
                 position: relative;
+                margin: 5px 10px;
                 &:first-of-type::after{
                     content: "";
                     position: absolute;
@@ -97,7 +99,7 @@
     }
 }
 .caped-nav__choose{
-    display: grid;
+    display: flex;
     font-size: 1.6rem;
     p{
         font-size: 2rem;

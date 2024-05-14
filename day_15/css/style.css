@@ -60,9 +60,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
 }
 .header-caped .caped-nav ul li {
   position: relative;
+  margin: 5px 10px;
 }
 .header-caped .caped-nav ul li:first-of-type::after {
   content: "";
@@ -92,7 +94,7 @@
 }
 
 .caped-nav__choose {
-  display: grid;
+  display: flex;
   font-size: 1.6rem;
 }
 .caped-nav__choose p {
